@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+	<style data-sveltekit>.home-page.s-y_bCXRrkrYfP{padding:2rem 4rem;display:flex;align-items:center;flex-direction:column;justify-content:center}.s-y_bCXRrkrYfP{}
+.job-item.s-uM7u9-w6UR0R{border:1px solid grey;padding:2rem;width:50%;margin:1rem;border-radius:10px}.job-details.s-uM7u9-w6UR0R{display:flex;justify-content:space-between}.s-uM7u9-w6UR0R{}</style>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="home-page s-y_bCXRrkrYfP"><h1 class="s-y_bCXRrkrYfP" data-svelte-h="svelte-14gznbt">Job Listing Home page</h1> <div class="job-item s-uM7u9-w6UR0R"><p class="s-uM7u9-w6UR0R">Job Title: <b class="s-uM7u9-w6UR0R">Job 1</b></p> <p class="s-uM7u9-w6UR0R">Description: <b class="s-uM7u9-w6UR0R">Very good job</b></p> <div class="job-details s-uM7u9-w6UR0R"><span class="s-uM7u9-w6UR0R">Company Name : <b class="s-uM7u9-w6UR0R">ABC Software Company</b></span> <span class="s-uM7u9-w6UR0R">Compensation per year: <b class="s-uM7u9-w6UR0R">$40000 per year</b></span></div> </div><div class="job-item s-uM7u9-w6UR0R"><p class="s-uM7u9-w6UR0R">Job Title: <b class="s-uM7u9-w6UR0R">Job 2</b></p> <p class="s-uM7u9-w6UR0R">Description: <b class="s-uM7u9-w6UR0R">Better job</b></p> <div class="job-details s-uM7u9-w6UR0R"><span class="s-uM7u9-w6UR0R">Company Name : <b class="s-uM7u9-w6UR0R">XYZ Software Company</b></span> <span class="s-uM7u9-w6UR0R">Compensation per year: <b class="s-uM7u9-w6UR0R">$60000 per year</b></span></div> </div> </div> 
+			
+			<script>
+				{
+					__sveltekit_dev = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,{"type":"data","data":{job_list:[{job_title:"Job 1",job_description:"Very good job",company_name:"ABC Software Company",compensation_per_year:"$40000 per year"},{job_title:"Job 2",job_description:"Better job",company_name:"XYZ Software Company",compensation_per_year:"$60000 per year"}]},"uses":{}}];
+
+					Promise.all([
+						import("/@fs/C:/Users/SilasMe/Downloads/job-list-ssr-sveltekit/node_modules/@sveltejs/kit/src/runtime/client/entry.js"),
+						import("/@fs/C:/Users/SilasMe/Downloads/job-list-ssr-sveltekit/.svelte-kit/generated/client/app.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
